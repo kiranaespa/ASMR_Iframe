@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASMR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .video-container {
+            flex: 2;
+            text-align: center;
+        }
+
+        iframe {
+            width: 90%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            border: none;
+        }
+
+        .video-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .video-list button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .video-list button:hover {
+            background-color: #0056b3;
+        }
+
+        .marquee {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SAS ASMR COMPILATION</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe id="mainVideo" src="hhttps://www.youtube.com/embed/l6LqXUwTU_w" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-list">
+            <button onclick="changeVideo('kU8LEroVW44')">Crepe Cake ASMR</button>
+            <button onclick="changeVideo('1GNxQeDsVHQ')">Unicorn Crepe Cake ASMR</button>
+            <button onclick="changeVideo('j73xDZSENhU')">Sushi Platter ASMR</button>
+            <button onclick="changeVideo('oFoz6uq-am4')">Rotisserie Chicken ASMR</button>
+            <button onclick="changeVideo('r4jG8NavGV8')">Wendy's ASMR</button>
+        </div>
+    </div>
+
+    <marquee class="marquee">
+        🎉 Semoga enjoy dengan video ASMR ini! 🔥
+    </marquee>
+
+    <script>
+        function changeVideo(videoId) {
+            let mainVideo = document.getElementById("mainVideo");
+            mainVideo.src = "https://www.youtube.com/embed/" + videoId;
+        }
+    </script>
+
+</body>
+</html>
